@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>787 Entertainment Survey Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">787 Entertainment Survey Form</h1>
+        <p id="description">Please take time to fill the survey form so we can improve our user's experience</p>
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label" for="name">Please enter your name (required):</label>
+                <input id="name" name="name" type="text" placeholder="Enter your name" required>
+                
+                <label id="email-label" for="email">Please enter your email (required):</label>
+                <input id="email" name="email" type="email" placeholder="Enter your email" required>
+                
+                <label id="number-label" for="number">Please enter your age (optional):</label>
+                <input id="number" name="number" type="number" min="13" max="120" placeholder="Enter your age">
+            </fieldset>
+            
+            <fieldset>
+                <label for="dropdown">What is your current role?</label>
+                <select id="dropdown" name="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="1">Student Full-Time</option>
+                    <option value="2">Student Part-Time</option>
+                    <option value="3">Employed Full-Time</option>
+                    <option value="4">Employed Part-Time</option>
+                    <option value="5">Rather not say</option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <label>Will you recommend 787 Entertainment to your family and friends?</label>
+                <label for="yes"><input id="yes" type="radio" name="recommendation" value="yes" class="inline" checked>Yes, 100%</label>
+                <label for="maybe"><input id="maybe" type="radio" name="recommendation" value="maybe" class="inline">Maybe</label>
+                <label for="no"><input id="no" type="radio" name="recommendation" value="no" class="inline">Probably Not</label>
+            </fieldset>
+            
+            <fieldset>
+                <label>Which 787 service do you like the most?</label>
+                <select id="service" name="service">
+                    <option value="">(select one)</option>
+                    <option value="1">Beat leasing</option>
+                    <option value="2">Studio Sessions</option>
+                    <option value="3">Graphic Design</option>
+                    <option value="4">Logo Design</option>
+                    <option value="5">CV Writing</option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <label>Which service do you want us to improve? (Check all that apply)</label>
+                <label for="beat"><input id="beat" type="checkbox" name="service-improvement" value="beat" class="inline">Beat leasing</label>
+                <label for="studio"><input id="studio" type="checkbox" name="service-improvement" value="studio" class="inline">Studio Sessions</label>
+                <label for="design"><input id="design" type="checkbox" name="service-improvement" value="design" class="inline">Graphic Design</label>
+                <label for="logo"><input id="logo" type="checkbox" name="service-improvement" value="logo" class="inline">Logo Design</label>
+                <label for="cv"><input id="cv" type="checkbox" name="service-improvement" value="cv" class="inline">CV Writing</label>
+            </fieldset>
+            
+            <fieldset>
+                <label for="suggestions">Any suggestions or recommendations?</label>
+                <textarea id="suggestions" name="bio" rows="3" cols="60" placeholder="Type your suggestions here"></textarea>
+            </fieldset>
+            
+            <input id="submit" type="submit" value="Submit" class="submit">
+        </form>
+    </body>
+</html>
